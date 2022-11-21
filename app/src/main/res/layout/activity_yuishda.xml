@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/cel_bg"
+    android:layout_height="match_parent"
+    tools:context=".nkiosa.Yuishda">
+
+    <TextView
+        android:id="@+id/kkds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touch on lucky items faster and take your prize"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <ImageView
+        android:id="@+id/ksak"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kkds"
+        app:layout_constraintVertical_bias="0.26999998"
+        app:srcCompat="@drawable/cel_mag_1" />
+
+    <ImageView
+        android:id="@+id/vksodko"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ksak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@+id/ksak"
+        app:layout_constraintTop_toTopOf="@+id/ksak"
+        app:srcCompat="@drawable/cel_mag_2" />
+
+    <ImageView
+        android:id="@+id/mkkkosd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/vksodko"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vksodko"
+        app:layout_constraintTop_toTopOf="@+id/vksodko"
+        app:srcCompat="@drawable/cel_mag_4" />
+
+    <ImageView
+        android:id="@+id/lsosdpds"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ksak"
+        app:srcCompat="@drawable/cel_mag_3" />
+
+    <ImageView
+        android:id="@+id/njvoaksd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/lsosdpds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@+id/lsosdpds"
+        app:layout_constraintTop_toTopOf="@+id/lsosdpds"
+        app:srcCompat="@drawable/cel_mag_4" />
+
+    <ImageView
+        android:id="@+id/lsodsp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/njvoaksd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/njvoaksd"
+        app:layout_constraintTop_toTopOf="@+id/njvoaksd"
+        app:srcCompat="@drawable/cel_mag_1" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        app:cardBackgroundColor="@color/bg_clrs"
+        app:layout_constraintBottom_toTopOf="@+id/vksodko"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kkds"
+        app:layout_constraintVertical_bias="0.36"
+        app:strokeWidth="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your coins : 0"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your extra bonus : x2"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/njvoaksd"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <Button
+        android:id="@+id/ijsdi"
+        android:layout_width="250dp"
+        android:textStyle="bold"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/bg_clrs"
+        android:text="Stop and take prize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bonus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
